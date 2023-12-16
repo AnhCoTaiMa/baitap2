@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id=x>
+<input type="number" id=y>
+<br>
+<br>
+<button onclick="Code1()">Addition(+)</button>
+<button onclick="Code2()">Subtraction(-)</button>
+<button onclick="Code3()">Multiplication(X)</button>
+<button onclick="Code4()">Division(/)</button>
+<br>
+<br>
+<h3>Result Division:</h3>
+<div id="result"></div>
+
+<script>
+    function Code1() {
+        let x1=document.getElementById('x').value;
+        let y1=document.getElementById('y').value;
+        let result = Number(x1)+Number(y1);
+        document.getElementById("result").innerHTML=  result;
+    }
+    function Code2() {
+        let x1 = document.getElementById('x').value;
+        let y1 = document.getElementById('y').value;
+        let result = Number(x1) - Number(y1);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Code3() {
+        let x1 = document.getElementById('x').value;
+        let y1 = document.getElementById('y').value;
+        let result = Number(x1) * Number(y1);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Code4() {
+        let x1 = document.getElementById('x').value;
+        let y1 = document.getElementById('y').value;
+        let result = Number(x1) / Number(y1);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
